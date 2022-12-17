@@ -38,8 +38,13 @@ public class Solution {
 
         //Creating the object for Beautiful days class and passing the arguments.
         BeautifulDays beautifulDays = new BeautifulDays();
-        int result = beautifulDays.countBeautifulDaysInRange(startDay, endDay, divisor);
-        System.out.println(result);
+        try {
+            int result = beautifulDays.countBeautifulDaysInRange(startDay, endDay, divisor);
+            System.out.println(result);
+        } catch (Exception exception) {
+            System.out.println("Exception : "+ exception.getMessage());
+        }
+
 
     }
 }

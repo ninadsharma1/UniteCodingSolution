@@ -8,20 +8,14 @@ public class BeautifulDays {
      * Beautiful days int.
      *
      * @param startDay the
-     * @param endDay the endDay
-     * @param divisor the divisor
+     * @param endDay   the endDay
+     * @param divisor  the divisor
      * @return the int
+     * @throws Exception the exception
      */
     public int countBeautifulDaysInRange(final int startDay, final int endDay, final int divisor) throws Exception {
-        /*
-        *  As mentioned in the hackerrank constraints : 1 <= startDay <= endDay <= 2 * 10^2
-        */
-        if(startDay < 1 || endDay < 1 || divisor < 1) {
-            throw new Exception("Unable to process any negative range.");
-        }
-        if(startDay > 2000000 || endDay > 2000000) {
-            throw new Exception("Unable to process range above 2 * 10^6.");
-        }
+        // Validating input constraints.
+        validateRangeConstrains(startDay, endDay, divisor);
         /*
          * Solution :
          * 1. Reverse the number using reverseDigit function.
@@ -36,6 +30,27 @@ public class BeautifulDays {
             }
         }
         return count;
+    }
+
+    /**
+     * Validate input constrains.
+     *
+     * @param startDay the start day
+     * @param endDay   the end day
+     * @param divisor  the divisor
+     * @throws Exception the exception
+     */
+    private static void validateRangeConstrains(
+            final int startDay, final int endDay, final int divisor) throws Exception {
+        /*
+         *  As mentioned in the hackerrank constraints : 1 <= startDay <= endDay <= 2 * 10^2
+         */
+        if(startDay < 1 || endDay < 1 || divisor < 1) {
+            throw new Exception("Unable to process any range lesser than 1.");
+        }
+        if(startDay > 2000000 || endDay > 2000000) {
+            throw new Exception("Unable to process range above 2 * 10^6.");
+        }
     }
 
     /**
