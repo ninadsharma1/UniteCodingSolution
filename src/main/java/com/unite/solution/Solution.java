@@ -40,7 +40,7 @@ public class Solution {
         BeautifulDays beautifulDays = new BeautifulDays();
         try {
             int result = beautifulDays.countBeautifulDaysInRange(startDay, endDay, divisor);
-            System.out.println(result);
+            System.out.println("Count of beautiful days : "+result);
         } catch (Exception exception) {
             System.out.println("Exception : "+ exception.getMessage());
         }
