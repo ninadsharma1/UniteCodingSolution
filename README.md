@@ -12,5 +12,5 @@ Challange link : https://www.hackerrank.com/challenges/beautiful-days-at-the-mov
 # To Run Test cases
 1. Run TestRunner class
 
-# Libraries used :
+# Libraries used 
 1. JUnit for testcases
