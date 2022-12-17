@@ -25,7 +25,7 @@ public class BeautifulDays {
         /*
          * Solution :
          * 1. Reverse the number using reverseDigit function.
-         * 2. Calculate the absolute difference between the initial and reversed number.
+         * 2. Calculate the absolute difference between the number and reversed number between the range.
          * 3. Keep track of the count of evenly divisible numbers and return the count.
         */
         int count = 0;

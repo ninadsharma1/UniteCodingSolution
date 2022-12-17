@@ -33,7 +33,7 @@ public class Solution {
         int endDay = stdin.nextInt();
 
         //Taking input divisor : Need to check if the number is evenly divided by divisor.
-        System.out.println("Enter the number (k) :");
+        System.out.println("Enter the divisor (k) :");
         int divisor = stdin.nextInt();
 
         //Creating the object for Beautiful days class and passing the arguments.
