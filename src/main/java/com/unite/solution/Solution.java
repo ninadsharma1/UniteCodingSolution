@@ -15,7 +15,7 @@ public class Solution {
      *
      * @param args the input arguments
      */
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
 
         System.out.println("Given a range of numbered days (i...j),  and a number k, " +
                 "determine the number of days in the range that are beautiful. " +
@@ -44,7 +44,5 @@ public class Solution {
         } catch (Exception exception) {
             System.out.println("Exception : "+ exception.getMessage());
         }
-
-
     }
 }
