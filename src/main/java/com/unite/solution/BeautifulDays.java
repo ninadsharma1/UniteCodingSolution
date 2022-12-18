@@ -41,8 +41,9 @@ public class BeautifulDays {
      * @param divisor  the divisor
      * @throws Exception the exception
      */
-    private static void validateRangeConstrains(
-            final int startDay, final int endDay, final int divisor) throws Exception {
+    private static void validateRangeConstrains(final int startDay,
+                                                final int endDay,
+                                                final int divisor) throws Exception {
         /*
          *  As mentioned in the hackerrank constraints :
          * 1 <= startDay(i) <= endDay(j) <= 2 * 10^2
