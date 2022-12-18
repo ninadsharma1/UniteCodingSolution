@@ -46,7 +46,7 @@ public class BeautifulDays {
                                                 final int divisor) throws Exception {
         /*
          *  As mentioned in the hackerrank constraints :
-         * 1 <= startDay(i) <= endDay(j) <= 2 * 10^2
+         * 1 <= startDay(i) <= endDay(j) <= 2 * 10^6
          * 1 <= divisor(k) <= 2 * 10^9
          */
         if (startDay < 1 || endDay < 1 || divisor < 1) {
