@@ -7,7 +7,7 @@ package com.unite.solution;
 import java.util.Scanner;
 
 /**
- * The type Solution.
+ * The type Solution. It contains the main function to invoke the code.
  */
 public class Solution {
     /**
@@ -22,6 +22,7 @@ public class Solution {
                 "Beautiful numbers are defined as numbers where |i - reverse(i)| is evenly divisible by k. " +
                 "If a days value is a beautiful number, it is a beautiful day. " +
                 "Return the number of beautiful days in the range");
+        try {
         Scanner stdin = new Scanner(System.in);
 
         // Taking input : Start range of number.
@@ -38,11 +39,10 @@ public class Solution {
 
         //Creating the object for Beautiful days class and passing the arguments.
         BeautifulDays beautifulDays = new BeautifulDays();
-        try {
             int result = beautifulDays.countBeautifulDaysInRange(startDay, endDay, divisor);
             System.out.println("Count of beautiful days : "+result);
         } catch (Exception exception) {
-            System.out.println("Exception : "+ exception.getMessage());
+            System.out.println("Invalid input : "+ exception.getMessage());
         }
     }
 }

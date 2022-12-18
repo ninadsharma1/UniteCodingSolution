@@ -1,7 +1,7 @@
 package com.unite.solution;
 
 /**
- * The type Result.
+ * Beautiful Days class containing the function to calculate beautiful days in a range for divisor (k).
  */
 public class BeautifulDays {
     /**
@@ -57,7 +57,7 @@ public class BeautifulDays {
      * Revers digits int.
      *
      * @param number the number
-     * @return the int
+     * @return the int(reversed number)
      */
     private static int reverseDigits(int number) {
         /*
