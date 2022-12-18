@@ -24,7 +24,7 @@ public class BeautifulDaysTest {
     @Test(expected = Exception.class)
     public void countBeautifulDaysInNegativeRangeTest() throws Exception {
         //Testing the negative i, j, k values
-        beautifulDays.countBeautifulDaysInRange(-1,2,1);
+        beautifulDays.countBeautifulDaysInRange(-1, 2, 1);
     }
 
     /**
@@ -35,7 +35,7 @@ public class BeautifulDaysTest {
     @Test(expected = Exception.class)
     public void countBeautifulDaysOverflowTest() throws Exception {
         //Testing the overflow condition in case of reversing the int value.
-        beautifulDays.countBeautifulDaysInRange(1000000045,1000000045, 2);
+        beautifulDays.countBeautifulDaysInRange(1000000045, 1000000045, 2);
     }
 
     /**
@@ -58,7 +58,7 @@ public class BeautifulDaysTest {
     @Test
     public void countBeautifulDaysInvalidTest() throws Exception {
         //Testing the invalid condition for counting beautiful days.
-        int result = beautifulDays.countBeautifulDaysInRange(49860 ,205494 ,155635764);
+        int result = beautifulDays.countBeautifulDaysInRange(49860, 205494, 155635764);
         assertNotEquals(608, result);
         //Correct output : 607
         //assertEquals(607, result);

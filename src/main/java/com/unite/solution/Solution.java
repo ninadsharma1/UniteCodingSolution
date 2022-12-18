@@ -23,26 +23,26 @@ public class Solution {
                 "If a days value is a beautiful number, it is a beautiful day. " +
                 "Return the number of beautiful days in the range");
         try {
-        Scanner stdin = new Scanner(System.in);
+            Scanner stdin = new Scanner(System.in);
 
-        // Taking input : Start range of number.
-        System.out.println("Enter the starting day :");
-        int startDay = stdin.nextInt();
+            // Taking input : Start range of number.
+            System.out.println("Enter the starting day :");
+            int startDay = stdin.nextInt();
 
-        // Taking input : End range of number.
-        System.out.println("Enter the end day :");
-        int endDay = stdin.nextInt();
+            // Taking input : End range of number.
+            System.out.println("Enter the end day :");
+            int endDay = stdin.nextInt();
 
-        //Taking input divisor : Need to check if the number is evenly divided by divisor.
-        System.out.println("Enter the divisor (k) :");
-        int divisor = stdin.nextInt();
+            //Taking input divisor : Need to check if the number is evenly divided by divisor.
+            System.out.println("Enter the divisor (k) :");
+            int divisor = stdin.nextInt();
 
-        //Creating the object for Beautiful days class and passing the arguments.
-        BeautifulDays beautifulDays = new BeautifulDays();
+            //Creating the object for Beautiful days class and passing the arguments.
+            BeautifulDays beautifulDays = new BeautifulDays();
             int result = beautifulDays.countBeautifulDaysInRange(startDay, endDay, divisor);
-            System.out.println("Count of beautiful days : "+result);
+            System.out.println("Count of beautiful days : " + result);
         } catch (Exception exception) {
-            System.out.println("Invalid input : "+ exception.getMessage());
+            System.out.println("Invalid input : " + exception.getMessage());
         }
     }
 }
