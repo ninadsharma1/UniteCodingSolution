@@ -26,15 +26,12 @@ public class Solution {
             Scanner stdin = new Scanner(System.in);
 
             // Taking input : Start range of number.
-            System.out.println("Enter the starting day :");
             int startDay = stdin.nextInt();
 
             // Taking input : End range of number.
-            System.out.println("Enter the end day :");
             int endDay = stdin.nextInt();
 
             //Taking input divisor : Need to check if the number is evenly divided by divisor.
-            System.out.println("Enter the divisor (k) :");
             int divisor = stdin.nextInt();
 
             //Creating the object for Beautiful days class and passing the arguments.

@@ -18,9 +18,10 @@ public class BeautifulDays {
         validateRangeConstrains(startDay, endDay, divisor);
         /*
          * Solution :
-         * 1. Reverse the number using reverseDigit function.
-         * 2. Calculate the absolute difference between the number and reversed number between the range.
-         * 3. Keep track of the count of evenly divisible numbers and return the count.
+         * 1. Loop from startDay to endDay
+         * 2. Reverse the number using reverseDigit function.
+         * 3. Calculate the absolute difference between the number and reversed number between the range.
+         * 4. Keep track of the count of evenly divisible numbers and return the count.
          */
         int count = 0;
         for (int number = startDay; number <= endDay; number++) {
@@ -43,13 +44,18 @@ public class BeautifulDays {
     private static void validateRangeConstrains(
             final int startDay, final int endDay, final int divisor) throws Exception {
         /*
-         *  As mentioned in the hackerrank constraints : 1 <= startDay <= endDay <= 2 * 10^2
+         *  As mentioned in the hackerrank constraints :
+         * 1 <= startDay(i) <= endDay(j) <= 2 * 10^2
+         * 1 <= divisor(k) <= 2 * 10^9
          */
         if (startDay < 1 || endDay < 1 || divisor < 1) {
             throw new Exception("Unable to process any range lesser than 1.");
         }
         if (startDay > 2000000 || endDay > 2000000) {
             throw new Exception("Unable to process range above 2 * 10^6.");
+        }
+        if (divisor > 2000000000) {
+            throw new Exception("Unable to process the divisor (k) above 2 * 10^9.");
         }
     }
 
